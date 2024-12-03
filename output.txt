@@ -1,4 +1,0 @@
-a    bbb cc dddddd ee
-aaaa b   c  dd     eeeee
-a    b   c  d      e
-aa   bb  cc dd     ee

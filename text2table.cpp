@@ -19,7 +19,8 @@ int main(int argc, char* argv[]) {
 
 	//1. Пройти по файлу и подсчитать ширины столбцов
 	int lenwords[200] = { 0 };
-	int wordlen = 0, wordnum = 0;
+	int wordlen = 0;
+	int wordnum = 0;
 	int ch;
 	while ((ch = inFile.get()) != EOF) {
 		if (ch == ' ' || ch == '\t') {
@@ -87,7 +88,8 @@ int main(int argc, char* argv[]) {
 					charcounter++;
 				}
 				charcounter=0;
-			}         
+			}
+			static_cast<char>(ch);
 			outFile.put(ch);
 			wordlen++;
 			charcounter++;

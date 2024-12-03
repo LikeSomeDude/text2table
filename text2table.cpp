@@ -50,9 +50,9 @@ int main(int argc, char* argv[]) {
 	}
 	
 
-	for (int i = 0; i < 200; i++) {
-		cout << lenwords[i] << " ";
-	}
+//	for (int i = 0; i < 200; i++) {
+//		cout << lenwords[i] << " ";
+//	}
 	//2. Пройти по фалу и добавить пробелы к словам так, чтобы ширина слова с пробелами стала равна ширине столбца
 	wordlen = 0;
 	wordnum = 0;

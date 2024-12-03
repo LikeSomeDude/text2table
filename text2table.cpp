@@ -12,7 +12,7 @@ int main(int argc, char* argv[]) {
 	}
 
 	ifstream inFile(argv[1]);
-	if (inFile) {
+	if (!inFile) {
 		cout << "Can not open file " << argv[1] << "\n";
 		return 2;
 	}

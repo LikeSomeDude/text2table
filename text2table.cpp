@@ -53,6 +53,8 @@ int main(int argc, char* argv[]) {
 //	for (int i = 0; i < 200; i++) {
 //		cout << lenwords[i] << " ";
 //	}
+	inFile.clear();
+	inFile.seekg(0);
 	//2. Пройти по фалу и добавить пробелы к словам так, чтобы ширина слова с пробелами стала равна ширине столбца
 	wordlen = 0;
 	wordnum = 0;
@@ -80,10 +82,11 @@ int main(int argc, char* argv[]) {
 		}
 		else {
 			if (wordlen == 0 && wordnum > 0) {
-				while (charcounter < lenwords[wordnum]) {
+				while (charcounter <= lenwords[wordnum-1]) {
 					outFile.put(' ');
 					charcounter++;
 				}
+				charcounter=0;
 			}         
 			outFile.put(ch);
 			wordlen++;
